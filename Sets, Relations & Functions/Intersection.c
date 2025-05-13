@@ -14,6 +14,7 @@ void printIntersection(int setA[], int setB[], int sizeOfA, int sizeOfB) {
 		for(j=0; j<sizeOfB; j++) {
 			if(setA[i] == setB[j] && !existsInArray(intersection, setA[i], count)) {
 				intersection[count++] = setA[i];
+				break;
 			}
 		}
 	}
