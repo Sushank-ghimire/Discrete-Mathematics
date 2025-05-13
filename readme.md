@@ -4,6 +4,12 @@ This cheatsheet outlines key topics from Discrete Mathematics that can be applie
 
 ---
 
+### Manual Compilation in GCC
+
+```
+gcc filename.c helpers.c -o filename.exe
+```
+
 ## 1. Propositional Logic & Predicate Logic
 
 ### 💡 Description:
