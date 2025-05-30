@@ -5,7 +5,7 @@ void printArray(int size, int array[size]) {
 	}
 }
 
-void geArray(int size, int array[size]) {
+void getArray(int size, int array[size]) {
 	int i;
 	for(i=0; i<size; i++) {
 		scanf("%d", &array[i]);
