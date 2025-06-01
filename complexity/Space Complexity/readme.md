@@ -1,4 +1,4 @@
-# 📦 Space Complexity Cheatsheet
+# 📦 Space Complexity
 
 Space Complexity refers to the **total amount of memory** used by an algorithm, including input values, variables, data structures, and function call overhead. It is typically expressed as a function of the input size `n`.
 
