@@ -143,11 +143,107 @@ This type of graph relaxes the restrictions of a simple graph and is commonly us
 C. Pseudo Graph
 
 <p align="center">
-  <img src="https://www.researchgate.net/profile/Pawel-Boguslawski/publication/265219734/figure/fig4/AS:652964947562502@1532690383548/Graphs-a-simple-graph-b-multigraph-c-pseudograph-d-labelled-graph-edges-e.png" alt="Pseudograph" />
+  <img width="400" src="https://www.researchgate.net/profile/Pawel-Boguslawski/publication/265219734/figure/fig4/AS:652964947562502@1532690383548/Graphs-a-simple-graph-b-multigraph-c-pseudograph-d-labelled-graph-edges-e.png" alt="Pseudograph" />
 </p>
+
+## ✅ Representation of Graphs
+
+Graphs can be represented in various ways depending on the application and type of graph. The most common representations are:
+
+### 1. **Adjacency Matrix**
+
+- A 2D matrix of size `V x V` where `V` is the number of vertices.
+- If there is an edge between vertex `i` and vertex `j`, the cell `matrix[i][j]` is marked (usually with 1).
+- Suitable for dense graphs.
+
+**Example:**
+
+For a graph with `V = {a, b, c}` and `E = { {a,b}, {b,c} }`:
+
+```
+    a  b  c
+a [ 0, 1, 0 ]
+b [ 1, 0, 1 ]
+c [ 0, 1, 0 ]
+```
+
+<p align="center">
+  <img width="300" src="https://www.tutorialspoint.com/discrete_mathematics/images/adjacency_undirected.jpg" alt="Adjacency Undirected Matrix" />
+  <img width="300" src="https://www.tutorialspoint.com/discrete_mathematics/images/adjacency_directed.jpg" alt="Adjacency Directed Matrix" />
+</p>
+
+---
+
+### 2. **Adjacency List**
+
+- Uses a list where each vertex has a list of connected vertices.
+- More efficient for sparse graphs.
+
+**Example:**
+
+For the same graph:
+
+```
+a → b
+b → a → c
+c → b
+```
+
+<p align="center">
+  <img src="https://www.tutorialspoint.com/discrete_mathematics/images/adjacency_list.jpg" alt="Adjacency List" />
+</p>
+
+---
+
+### 3. **Incidence Matrix**
+
+- A matrix with rows representing vertices and columns representing edges.
+- Each column shows which vertices are connected by the edge.
+
+**Example:**
+
+For `V = {a, b}` and `E = {e1 = {a,b}}`:
+
+```
+     e1
+a  [ 1 ]
+b  [ 1 ]
+```
+
+- For directed graphs, 1 is replaced with:
+
+  - `-1` for origin
+  - `+1` for destination
+
+<p align="center">
+      <img height="auto" width="300" src="https://media.geeksforgeeks.org/wp-content/uploads/20240628123914/Undirected-Graph-Incidence-Matrix-1.webp" alt="Incidence Undirected Matrix" />
+    </p>
+
+---
+
+### 4. **Edge List**
+
+- A list of all edges in the graph.
+- Simple and minimal representation.
+
+**Example:**
+
+```
+Edges:
+{a, b}
+{b, c}
+```
+
+---
 
 ## 📚 Conclusion
 
-Graphs are powerful tools for modeling relationships and are used in a wide array of applications including computer networks, social networks, transportation systems, and more.
+Graphs are powerful tools for modeling relationships and are used in a wide array of applications including:
+
+- Computer Networks
+- Social Networks
+- Transport Systems
+- Web Page Linking
+- Dependency Graphs (e.g., compiler tasks)
 
 > For detailed explanations, visit [TutorialsPoint Graph Theory](https://www.tutorialspoint.com/discrete_mathematics/graph_and_graph_models.htm)
