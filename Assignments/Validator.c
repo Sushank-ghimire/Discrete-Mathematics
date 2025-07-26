@@ -30,9 +30,9 @@ int main() {
     }
 
     if (allTrue)
-        printf("\n? The argument is VALID (tautology).\n");
+        printf("\nThe argument is VALID.\n");
     else
-        printf("\n? The argument is INVALID (not a tautology).\n");
+        printf("\nThe argument is INVALID.\n");
 
     return 0;
 }
